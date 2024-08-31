@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form - AltSchool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="form.html">Application Form</a></li>
+        </ul>
+    </nav>
+
+    <section id="application-form">
+        <h1>AltSchool Application Form</h1>
+        <form action="#" method="post">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div>
+                <label for="address">Home Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="course">Preferred Course:</label>
+                <select id="course" name="course" required>
+                    <option value="engineering">Engineering</option>
+                    <option value="data">Data</option>
+                    <option value="product">Product</option>
+                    <option value="business">Business</option>
+                    <option value="creative">Creative Economy</option>
+                    <option value="media">Media</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Submit Application</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

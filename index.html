@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - AltSchool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="form.html">Application Form</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p><strong>AltSchool ID:</strong> Your_ID_Here</p>
+        <p><strong>Biography:</strong> Write about yourself here. Include your background, education, hobbies, etc.</p>
+        <p><strong>Reason for Joining AltSchool:</strong> Explain why you decided to join AltSchool, what attracted you to the program, and what you hope to gain from it.</p>
+        <p><strong>Goals for School of Engineering Program:</strong> Outline your goals for the engineering program, including what you want to learn, the skills you hope to develop, and your career aspirations.</p>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" id="topLink">Scroll to Top</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+<script>
+    document.getElementById("topLink").addEventListener("click", function(event){
+        event.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+</script>
