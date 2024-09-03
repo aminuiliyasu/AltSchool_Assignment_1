@@ -1,84 +1,114 @@
-/* Basic Styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+body, nav {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-nav ul {
-    background-color: #333;
-    list-style: none;
-    padding: 10px;
-    text-align: center;
+nav {
+    background-color: rgb(69, 68, 68);
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
+    padding: 0.4rem 1rem;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+    padding: 20px;
 }
 
 h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
     text-align: center;
-    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    color: black;
+    border-bottom: 2px solid yellowgreen;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.back-to-top {
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid yellowgreen;
+    border-radius: 4px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    box-shadow: 0 2px 8px;
+}
+
+.back-to-top:hover {
+    background-color: black;
+    color: white;
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
     background-color: white;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px;   
 }
 
-form div {
-    margin-bottom: 15px;
+#copyright {
+    font-size: 0.8rem;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20%;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select {
+.first-half, .second-half {
+    flex: 1;
+    max-width: 50%;
+}
+
+.first-half img.banner {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    height: auto;
 }
 
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-#topLink {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #333;
+@media (max-width: 768px){
+    .container {
+        flex-direction: column;
+    }
+    .first-half, .second-half {
+        max-width: 50%;
+    }
 }

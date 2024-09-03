@@ -3,41 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - AltSchool</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<body>
-
-    <!-- Global Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="form.html">Application Form</a></li>
-        </ul>
+<header>
+    <nav id="top">
+        <a href="./index.html">Home</a>
+        <a href="./form.html">Form</a>
+        <a href="./table.html">Table</a>
+        <a href="./media.html">Media</a>
     </nav>
-
-    <section id="about">
-        <h1>About Me</h1>
-        <p><strong>AltSchool ID:</strong> Your_ID_Here</p>
-        <p><strong>Biography:</strong> Write about yourself here. Include your background, education, hobbies, etc.</p>
-        <p><strong>Reason for Joining AltSchool:</strong> Explain why you decided to join AltSchool, what attracted you to the program, and what you hope to gain from it.</p>
-        <p><strong>Goals for School of Engineering Program:</strong> Outline your goals for the engineering program, including what you want to learn, the skills you hope to develop, and your career aspirations.</p>
+</header>
+<body>
+    <h1>About Me</h1>
+    <P><strong>ALT SCHOOL ID: Aminu Iliyasu</strong></P>
+    <section class="my_bio">
+        <h2>My Biograpy</h2>
+        <p>Hi, I am Aminu Iliyasu from Katsina, Nigeria, currently pursuing a Bachelor of Science in Computer Science Engineering at the University of Pécs, Hungary. I also attend AltSchool Africa, where I study software engineering. My journey, from crowded primary school classrooms of nearly 200 pupils to one of Central Europe's top universities, has been remarkable. From having no computer throughout my life in Nigeria to studying computer science at Hungary's first university, established in 1367, I faced the significant challenge of catching up with peers who had grown up using computers. Driven by a hunger to be among the best, I persevered and can now proudly say that I am a computer science engineer. Web development is my daily bread, but I am also delving into Artificial Intelligence. Is it fair to say I am a software engineer and simultaneously learning in 10 different institutions? Remember, I count in binary, lol!</p>
+    </section>
+    <section class="reason">
+        <h2>Why I Joined IT?</h2>
+        <P>After understanding the importance of technology, who wouldn't join IT? I guess nobody. Considering the application of software in our day-to-day activities—from banking systems, finance, and economy to digital school systems, business development, healthcare, social media, home automation, self-driving vehicles, artificial intelligence, and more—these are more than enough reasons for young minds who love science, like me, to join IT. IT is the world, and the world is IT! IT solves problems, and I don't like problems. So, to avoid these problems I need to solve them, that's why I need to join IT.</P>
+    </section>
+    
+    <section class="goals">
+        <h2>My Goal?</h2>
+        <p>My goal is to be among the most important people in the field of IT in the 21<sup>st</sup> century, just like the inventor of HTML, Tim Berners-Lee, was in the 20<sup>th</sup> century.</p>
     </section>
 
-    <!-- Scroll to Top Button -->
-    <a href="#top" id="topLink">Back to Top</a>
+    <section class="why_altSchool">
+        <h2>Where to start Tech career?</h2>
+        <p>There is no perfect place to start anything. It always depends on you, but I highly recommend <strong><a href="https://altschoolafrica.com/">AltSchool Africa</a></strong>. So far, it is the best tech school I know for transforming beginners into skilled software engineers.</p>
+    </section>
 
-    <!-- Footer -->
+    <a href="#top" class="back-to-top">Back to top</a>
+
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p id="copyright">&copy; 2024 Aminu Iliyasu. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
-
-<script>
-    document.getElementById("topLink").addEventListener("click", function(event){
-        event.preventDefault();
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    });
-</script>
